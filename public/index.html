@@ -1,15 +1,22 @@
 <html>
-    <head>
-        <link rel="stylesheet" href="index.css">
-    </head>
-    <body>
-        <div class="container">
-            <h1>Row Counter</h1>
-            <h2 id="count_el">0</h2>
-            <button id="increment-btn" onclick="increment()">INCREMENT</button>
-            <button id="save-btn" onclick="save()">Save</button>
-            <p id="save_el">Previous saves: </p>
+
+<head>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Blackjack</h1>
+        <p id="message-el">Want to play a round?</p>
+        <p id="cards-el">Cards:</p>
+        <p id="sum-el">Sum:</p>
+        <div class="button-team">
+            <button id="start-btn" onclick="startGame()">Start Game</button>
+            <button id="drawCard-btn" onclick="drawNewCard()">Draw A Card</button>
         </div>
-        <script src="index.js"></script>
-    </body>
+        <p id="player-el"></p>
+    </div>
+    <script src="index.js"></script>
+</body>
+
 </html>
