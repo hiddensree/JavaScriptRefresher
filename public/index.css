@@ -1,46 +1,43 @@
+h1 {
+    color: goldenrod;
+}
+
 body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-image: url("./assets/background.jpg");
+    background-repeat: no-repeat;
     background-size: cover;
-    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-weight: bold;
     text-align: center;
-    height: 100vh;
+    color: white;
+    font-weight: bold;
 }
 
 .container{
-    background-color: whitesmoke ;
-    max-width: 80%;
-    margin: auto;
-    border: 3px solid black;
-    border-radius: 10px;
+    align-items: center;
+    margin-top: 100px;
+    scale : 1.5;
 }
 
-h1 {
-    margin-top: 10px;
-    margin-bottom: 10px;
+#message-el{
+    font-style: italic;
+
 }
 
-h2 {
-    font-size: 50px;
-    margin-top: 0;
-    margin-bottom: 20px;
+.button-team{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+    
 }
 
-button {
-    border: 1 px solid black;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    color: white;
+button{
+    color: #016f32;
+    width: 150px;
+    background: rgb(223, 189, 105);
     font-weight: bold;
-    width: 200px;
-    margin-bottom: 5px;
-    border-radius: 5px;
-
-}
-
-#increment-btn {
-    background: #2C2891;
-}
-
-#save-btn {
-    background: #1C7947;
+    font-size: medium;
+    padding-inline: 5px;
+    border-radius: 2px;
+    border: none;
 }

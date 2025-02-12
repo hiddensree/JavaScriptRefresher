@@ -2,7 +2,7 @@ import path, {dirname} from 'path'
 import { fileURLToPath } from 'url'
 import express from 'express'
 const app = express();
-const PORT = 8384;
+const PORT = 8385;
 
 // Get the file path from the url of the current module
 const __filename = fileURLToPath(import.meta.url)
@@ -16,12 +16,12 @@ app.use(express.static(path.join(__dirname, '../public')))
 // Website endpoints - sending back html elements
 
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, 'public', 'index.html'))
+    res.sendFile(path.join(__dirname, 'public', 'index.html')) // send the html files
 });
 
 // listen to incoming requests - specifically connected to port
 // functional server: http://localhost:8383
-// IP -> 127.0.0.0:8383
+// IP -> 127.0.0.0:8385
 app.listen(PORT, () => {
     console.log(`Server has started on: ${PORT}`)
 });
